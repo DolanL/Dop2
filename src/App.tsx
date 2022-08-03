@@ -19,6 +19,8 @@ function App() {
         setGet([]);
     }
 
+
+
     useEffect(() => {fetch('https://jsonplaceholder.typicode.com/posts')
         .then(response => response.json())
         .then(json => setGet(json))
